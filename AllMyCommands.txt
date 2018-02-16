@@ -1,0 +1,64 @@
+$ git init
+
+$git add file1.txt
+
+$git add file2.txt
+
+$git add file3.txt
+
+$git commit -m "three files added"
+
+$git rm file2.txt
+
+$git commit -m "Branches in nutshell deleted"
+
+$git log --diff-filter=D --summary
+
+$git checkout 0049195e1ce38cf696be61f5dcd40c2f64b169e0^1 file2.txt
+
+$git commit -m "file restored"
+
+$git remote add origin https://github.com/MernaGhabour/merno
+
+$git remote -v
+
+$git push origin master 
+
+$touch README.md
+
+$echo "Sprint 0. the reop has three files now.Merna Awad 37-4320. book Chacon, Scott, and Ben Straub. Pro Git. Apress," >> README.md
+
+$echo "2014" >> README.md
+
+$git checkout -b ReadMe
+
+$git add README.md
+
+$git commit -m "readme.md added to Readme branch"
+
+$git push origin ReadMe
+
+$git checkout master
+
+$git merge ReadMe
+
+$ git rm README.md
+
+$git commit -m "reasdme of master deleted as not required"
+
+$ git push origin master
+
+$git log --diff-filter=D --summary
+
+$ git checkout fac264aa8be98a14148d3fe5f6e94b97d9107e55^1 README.md
+
+$ git commit -m "readme of master restored"
+
+$ git push origin master
+
+$git add AllMyCommands.txt 
+
+$git commit -m "AllMyCommands added"
+
+$git push origin master 
+
